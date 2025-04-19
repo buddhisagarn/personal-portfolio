@@ -2,20 +2,18 @@
   display: flex;
   align-items: start;
   justify-content: space-around;
-}
-
-@media only screen and(max-width:980px) {
-  .main-div {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 50px;
 }
 
 .image-collections {
-  margin-top: 100px;
   width: 30%;
-  height: 250px;
   cursor: pointer;
+}
+
+.img-schools {
+  height: 230px;
 }
 
 .image-collections:hover {
@@ -26,4 +24,20 @@
 .image-collections img {
   height: 100%;
   width: 100%;
+}
+
+.image-collections h3 {
+  line-height: 50px;
+}
+
+@media only screen and (max-width:980px) {
+  .main-div {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 50px;
+  }
+
+  .image-collections {
+    width: 90%;
+  }
 }
