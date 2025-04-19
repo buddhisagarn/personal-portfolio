@@ -1,15 +1,11 @@
 import "./App.css";
-
+import Bsection1 from "./components/Body/Bsection1.jsx";
+import Header from "./components/Header/Header.jsx";
 function App() {
   return (
     <>
-      <div className="laptop">
-        <div className="screen">
-          <div className="header"></div>
-          <div className="text">Buddhi Sagar Nyaupane</div>
-        </div>
-        <div className="keyboard"></div>
-      </div>
+      <Header />
+      <Bsection1 />
     </>
   );
 }

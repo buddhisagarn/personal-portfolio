@@ -1,0 +1,29 @@
+.main-div {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+
+@media only screen and(max-width:980px) {
+  .main-div {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+.image-collections {
+  margin-top: 100px;
+  width: 30%;
+  height: 250px;
+  cursor: pointer;
+}
+
+.image-collections:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+.image-collections img {
+  height: 100%;
+  width: 100%;
+}
