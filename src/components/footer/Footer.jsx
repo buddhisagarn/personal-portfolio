@@ -1,5 +1,5 @@
 import "./Footer.css";
-const Footer = () => {
+function Footer() {
   return (
     <footer className="bg-black-900 text-white px-8 py-12">
       <div className="max-w-7xl mx-auto flex flex-row md:flex-row justify-around items-start gap-8">
@@ -90,6 +90,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;
