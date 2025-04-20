@@ -9,7 +9,6 @@
 
 .profile {
   display: flex;
-  height: 300px;
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -39,4 +38,5 @@
 
 .profile-text h1 {
   line-height: 80px;
+  font-size: 2rem;
 }
