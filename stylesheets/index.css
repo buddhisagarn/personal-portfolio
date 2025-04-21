@@ -34,13 +34,6 @@ nav {
     border-left-style: solid;
 }
 
-.mid a:hover {
-    color: rgb(49, 172, 0);
-    border-color: white;
-    border-width: 1px;
-    transition: 1s;
-}
-
 .i-n {
     margin-right: 10px;
 }

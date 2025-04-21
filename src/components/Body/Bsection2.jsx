@@ -12,14 +12,15 @@ export default function Bsection2() {
           <h1>Buddhi Sagar Nyaupane</h1>
           <p>
             I am a software developer. Those who does not know what is software
-            they can contact me.
+            they can contact me. I am a software developer. Those who does not
+            know what is software they can contact me.
           </p>
-          <h1>Buddhi Sagar Nyaupane</h1>
+          <h3>Education</h3>
           <p>
             I am a software developer. Those who does not know what is software
             they can contact me.
           </p>
-          <h1>Buddhi Sagar Nyaupane</h1>
+          <h5>As a Developer</h5>
           <p>
             I am a software developer. Those who does not know what is software
             they can contact me.
