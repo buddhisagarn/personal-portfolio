@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid rgb(226, 226, 226) 3px;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-icon {
+  display: inline-block;
+}
+
+.search-box {
+  position: relative;
+  background-color: rgb(230, 230, 230);
+  width: 250px;
+  display: inline-block;
+
+}
+
+#search-box {
+  background-color: transparent;
+  border: none;
+  height: 30px;
+  text-indent: 50px;
+}
+
+
+.search-box i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #0d0b0b;
+}
+
+.home-icon {}

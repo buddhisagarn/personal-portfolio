@@ -1,16 +1,13 @@
+// eslint-disable-next-line no-unused-vars
+import React from "react";
 import "./App.css";
-import Bsection1 from "./components/Body/Bsection1.jsx";
-import Bsection2 from "./components/Body/Bsection2.jsx";
-import Header from "./components/Header/Header.jsx";
-import Footer from "./components/footer/Footer.jsx";
+import Nav from "./components/Header/nav";
+// import Head from "./components/profile/Head.jsx";
 function App() {
   return (
-    <>
-      <Header />
-      <Bsection1 />
-      <Bsection2 />
-      <Footer />
-    </>
+    <div>
+      <Nav />
+    </div>
   );
 }
 
