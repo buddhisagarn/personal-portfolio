@@ -3,7 +3,7 @@
 export default function Menu() {
   return (
     <div className="menu-icon">
-      <i className="fa-brands fa-mendeley"></i>
+      <i className="fa-solid fa-user"></i>
     </div>
   );
 }
