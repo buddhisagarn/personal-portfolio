@@ -1,5 +1,56 @@
+.section {
+  width: 90%;
+  max-width: var(--mainwidth);
+  margin: auto;
+  height: 200vh;
+  padding-top: 50px;
+  display: flex;
+  gap: 23px;
+}
+
 .sec-first-1 {
-  border: solid 2px;
-  height: 200px;
-  width: 300px;
+  border: solid 1px rgb(119, 119, 119);
+  border-radius: 5px;
+  background-color: white;
+  height: 80vh;
+}
+
+.firsts {
+  width: 75%;
+  height: 80vh;
+}
+
+.seconds {
+  border: solid 1px rgb(119, 119, 119);
+  border-radius: 5px;
+  height: 80vh;
+  background-color: white;
+  width: 30%;
+}
+
+.sec-second-1 {
+  height: 80vh;
+
+
+}
+
+.profile-language,
+.public-profile-url {
+  height: 80px;
+  border: solid 1px rgb(161, 154, 154);
+  text-indent: 20px;
+  padding-top: 10px;
+}
+
+.public-profile-url {
+  margin-bottom: 20px;
+}
+
+.Heading {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+}
+
+.sub-text {
+  color: grey;
 }

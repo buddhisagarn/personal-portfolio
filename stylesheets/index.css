@@ -4,4 +4,12 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body {
+  background-color: rgb(243, 243, 243);
+}
+
+:root {
+  --mainwidth: 1200px;
+}
+
 .home-icon {}

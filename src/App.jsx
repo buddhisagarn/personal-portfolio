@@ -2,16 +2,12 @@
 import React from "react";
 import "./App.css";
 import Nav from "././components/Header/Nav.jsx";
-import Section1 from "./components/section/Section1.jsx";
-
-// import Head from "./components/profile/Head.jsx";
+import Section from "./components/section/Section.jsx";
 function App() {
   return (
     <div>
       <Nav />
-      <div>
-        <Section1 />
-      </div>
+      <Section />
     </div>
   );
 }

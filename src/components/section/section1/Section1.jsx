@@ -1,10 +1,10 @@
 // import React from 'react'
-import "../../../stylesheets/section.css";
-import Firsts from "./section1/Firsts";
+import "../../../../stylesheets/section.css";
+import Firsts from "./Firsts";
 
 export default function Section1() {
   return (
-    <div>
+    <div className="firsts">
       <Firsts />
     </div>
   );
