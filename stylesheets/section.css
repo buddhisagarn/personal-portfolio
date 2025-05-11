@@ -8,17 +8,21 @@
   gap: 23px;
 }
 
-.sec-first-1 {
+
+.firsts {
+
   border: solid 1px rgb(119, 119, 119);
   border-radius: 5px;
   background-color: white;
-  height: 80vh;
+  height: 100vh;
+  width: 75%;
 }
 
-.firsts {
-  width: 75%;
-  height: 80vh;
+.sec-first-1 {
+  height: 200px;
 }
+
+
 
 .seconds {
   border: solid 1px rgb(119, 119, 119);
@@ -30,8 +34,6 @@
 
 .sec-second-1 {
   height: 80vh;
-
-
 }
 
 .profile-language,
@@ -53,4 +55,49 @@
 
 .sub-text {
   color: grey;
+}
+
+.background-img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.basic-info {
+  width: 95%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.info-button-collection {
+  width: 70%;
+  margin-top: 20px;
+}
+
+.basic-info a {
+  color: blue;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.basic-info-name {
+  font-weight: 500;
+}
+
+.basic-info-role {
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(72, 72, 72);
+}
+
+.basic-info-contact {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.info-button-collection {
+  display: flex;
+  justify-content: space-around;
 }
