@@ -13,7 +13,7 @@ export default function Section1() {
       <Button1s />
       <Connect1 />
       <div className="profile-img">
-        <img src="public/profile.jpg" alt="" />
+        <img src="profile.jpg" alt="" />
       </div>
     </div>
   );
