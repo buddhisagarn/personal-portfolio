@@ -22,11 +22,12 @@
 
 .more-button {
   color: white;
-  border: solid rgb(17, 102, 187);
-  background: rgb(17, 102, 187);
+  border: solid rgb(10, 74, 138);
+  background: rgb(10, 74, 138);
   font-size: 20px;
   border-radius: 15px;
   padding: 1px 15px;
+  cursor: pointer;
 }
 
 .contact-button {
@@ -36,5 +37,6 @@
   border-radius: 15px;
   padding: 1px 15px;
   font-weight: 550;
+  cursor: pointer;
   color: rgb(87, 87, 87);
 }
