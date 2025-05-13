@@ -1,10 +1,17 @@
 .nav {
+  width: 100%;
+  background-color: white;
+  border-bottom: rgb(221, 221, 221) 1px solid;
+}
+
+.nav-in {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 50px;
-  border-bottom: 1px solid rgb(240, 240, 240);
   background-color: white;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .nav i {
@@ -64,5 +71,12 @@
 .icon-name {
   font-size: 12px;
   color: rgb(97, 97, 97);
+
+}
+
+@media only screen and (max-width:700px) {
+  .right-nav {
+    display: none;
+  }
 
 }

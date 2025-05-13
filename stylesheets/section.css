@@ -6,6 +6,7 @@
   padding-top: 50px;
   display: flex;
   gap: 23px;
+  max-width: 1200px;
 }
 
 
@@ -72,6 +73,8 @@
 .info-button-collection {
   width: 70%;
   margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .basic-info a {
@@ -95,15 +98,10 @@
   font-size: 18px;
 }
 
-.info-button-collection {
-  display: flex;
-  justify-content: space-around;
-}
-
 .connect1 {
   background-color: rgb(10, 74, 138);
   height: 100px;
-  width: 50%;
+  width: 400px;
   margin-top: 50px;
   margin-left: 30px;
   padding: 20px;
@@ -124,7 +122,7 @@
   cursor: pointer;
   color: blue;
   top: 80px;
-  left: 80px;
+  left: 10%;
   border: solid rgb(255, 255, 255) 3px;
   height: 150px;
   width: 150px;
@@ -137,4 +135,47 @@
   height: 100%;
   width: 100%;
   border-radius: 50%;
+}
+
+@media only screen and (max-width:1000px) {
+  .info-button-collection {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firsts {
+    width: 95%;
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+
+  .connect1 {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .info-button-collection {
+    display: none;
+  }
+
+  .basic-info {
+
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .connect1 {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+  }
 }
