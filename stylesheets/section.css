@@ -167,7 +167,6 @@
   }
 
   .basic-info {
-
     width: 90%;
     margin: auto;
     margin-top: 50px;
@@ -178,4 +177,38 @@
     margin: auto;
     margin-top: 20px;
   }
+
+  .section {
+    width: 100%;
+    padding: 0;
+    gap: 10px;
+  }
+
+  .firsts {
+    width: 99%;
+  }
+
+  .seconds {
+    width: 99%;
+  }
+
+  .profile-img {
+    /* height: 120px;
+    width: 120px; */
+    top: 66px;
+    left: 2%;
+  }
+
+  .sec-first-1 {
+    height: 150px;
+  }
+
+  .basic-info-name {
+    font-size: 28px;
+  }
+
+  .basic-info {
+    margin-top: 60px;
+  }
+
 }
