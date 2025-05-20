@@ -85,17 +85,18 @@
 
 .basic-info-name {
   font-weight: 500;
+  color: rgb(74, 74, 74);
 }
 
 .basic-info-role {
   font-weight: 500;
   font-size: 18px;
-  color: rgb(72, 72, 72);
+  color: rgb(105, 105, 105);
 }
 
 .basic-info-contact {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .connect1 {
@@ -122,11 +123,12 @@
   cursor: pointer;
   color: blue;
   top: 80px;
-  left: 10%;
+  left: 5%;
   border: solid rgb(255, 255, 255) 3px;
   height: 150px;
   width: 150px;
   border-radius: 50%;
+  outline: rgb(211, 211, 211) solid 1px;
 
 }
 
@@ -158,6 +160,10 @@
 
   .connect1 {
     width: 70%;
+  }
+
+  .seconds {
+    width: 95%;
   }
 }
 
@@ -193,8 +199,8 @@
   }
 
   .profile-img {
-    /* height: 120px;
-    width: 120px; */
+    height: 120px;
+    width: 120px;
     top: 66px;
     left: 2%;
   }
@@ -204,11 +210,19 @@
   }
 
   .basic-info-name {
-    font-size: 28px;
+    font-size: 24px;
+  }
+
+  .basic-info-role {
+    font-size: 16px;
+  }
+
+  .basic-info-contact {
+    font-size: 14px;
   }
 
   .basic-info {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
 }
