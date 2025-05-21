@@ -8,8 +8,10 @@ export default function Seconds() {
         <p className="sub-text">English</p>
       </div>
       <div className="public-profile-url">
-        <p className="Heading">Public profile and URL</p>
-        <p className="sub-text">English</p>
+        <p className="Heading">Linkedin profile and URL</p>
+        <p className="sub-text">
+          www.linkedin.com/in/buddhi-sagar-nyaupane-05b10b335
+        </p>
       </div>
     </div>
   );

@@ -15,6 +15,9 @@ export default function Section1() {
       <div className="profile-img">
         <img src="profile.jpg" alt="" />
       </div>
+      <div className="pen-one">
+        <i className="fa-solid fa-pen"></i>
+      </div>
     </div>
   );
 }
