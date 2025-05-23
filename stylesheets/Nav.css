@@ -6,11 +6,13 @@
 
 .nav-in {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 50px;
   background-color: white;
   max-width: 1200px;
+  width: 95%;
+  padding: 0 2px;
   margin: auto;
 }
 
@@ -26,7 +28,7 @@
 
 .right-nav {
   display: flex;
-  width: 240px;
+  width: 300px;
   justify-content: space-around;
   gap: 10px;
 }
