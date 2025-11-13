@@ -5,9 +5,9 @@ const Navbar = () => {
     <header className="header-area">
       <div className="container">
         <div className="gx-row d-flex align-items-center justify-content-between">
-          <a href="index.html" className="logo">
+          <Link to="/" className="logo">
             <img src="/assets/images/logo.svg" alt="Logo" />
-          </a>
+          </Link>
 
           <nav className="navbar">
             <ul className="menu">
@@ -18,16 +18,18 @@ const Navbar = () => {
                 <Link to={"/about"}>About</Link>
               </li>
               <li>
-                <a>Works</a>
+                <Link to={"/work"}>Work</Link>
               </li>
               <li>
-                <a>Contact</a>
+                <Link to={"/contact"}>Contact</Link>
               </li>
             </ul>
             <a className="theme-btn">Let&apos;s talk</a>
           </nav>
 
-          <a className="theme-btn">Let&apos;s talk</a>
+          <Link to={"/letstalk"} className="theme-btn">
+            Let&apos;s talk
+          </Link>
 
           <div className="show-menu">
             <span></span>

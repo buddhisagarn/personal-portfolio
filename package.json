@@ -13,7 +13,8 @@
     "@tailwindcss/vite": "^4.1.4",
     "aos": "^2.3.4",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "sitemap": "^9.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",

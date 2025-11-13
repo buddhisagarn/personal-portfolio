@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="footer-area">
@@ -8,21 +9,19 @@ const Footer = () => {
           </a>
           <ul className="footer-menu">
             <li>
-              <a href="index.html">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="about.html">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="works.html">Works</a>
+              <Link to="/work">Work</Link>
             </li>
             <li>
-              <a href="contact.html">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
-          <p className="copyright">
-            &copy; All rights reserved by <span>WordPress River</span>
-          </p>
+          <p className="copyright">&copy; All rights reserved</p>
         </div>
       </div>
     </footer>

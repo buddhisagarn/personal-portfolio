@@ -1,5 +1,6 @@
 import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -75,7 +76,7 @@ const HomePage = () => {
 
                   <div>
                     <div className="about-project-box info-box shadow-box h-full">
-                      <a className="overlay-link" href="works.html"></a>
+                      <Link className="overlay-link" to={"/works"}></Link>
                       <img
                         src="/assets/images/bg1.png"
                         alt="BG"
