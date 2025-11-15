@@ -42,14 +42,14 @@ const About = () => {
 
                 <ul>
                   <li>
-                    <p className="date">2007 - 2017</p>
-                    <h2>Framer Designer & Developer</h2>
-                    <p className="type">Bluebase Designs</p>
+                    <p className="date">2023 - 2025</p>
+                    <h2>Designer & Developer</h2>
+                    <p className="type">Web development | canva expert | figma</p>
                   </li>
                   <li>
-                    <p className="date">2017 - 2023</p>
+                    <p className="date">2023 - 2025</p>
                     <h2>Front-End Developer</h2>
-                    <p className="type">Larsen & Toubro</p>
+                    <p className="type">React</p>
                   </li>
                 </ul>
               </div>

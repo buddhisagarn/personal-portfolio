@@ -4,9 +4,9 @@ const Footer = () => {
     <footer className="footer-area">
       <div className="container">
         <div className="footer-content text-center">
-          <a href="index.html" className="logo">
-            <img src="/assets/images/logo.svg" alt="Logo" />
-          </a>
+          <Link to="/" className="logo">
+            <img src="/public/logo.png" alt="Logo" height="100" />
+          </Link>
           <ul className="footer-menu">
             <li>
               <Link to="/">Home</Link>

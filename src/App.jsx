@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/home/home-page";
 import About from "./pages/about/about";
-// import Work from "./pages/works/work";
 import Contact from "./pages/contact/Contact";
 import Work from "./pages/work/Work";
 import LetsTalk from "./pages/Letstalk";

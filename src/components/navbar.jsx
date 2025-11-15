@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="container">
         <div className="gx-row d-flex align-items-center justify-content-between">
           <Link to="/" className="logo">
-            <img src="/assets/images/logo.svg" alt="Logo" />
+            <img src="/logo.png" alt="Logo" height="100" />
           </Link>
 
           <nav className="navbar">

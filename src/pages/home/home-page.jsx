@@ -18,9 +18,9 @@ const HomePage = () => {
                   <img src="/profile.jpg" alt="About Me" />
                 </div>
                 <div className="infos">
-                  <h4>A WEB DESIGNER</h4>
+                  <h4>A WEB Developer</h4>
                   <h1>Buddhi Sagar Nyaupane.</h1>
-                  <p>I am a Web Designer.</p>
+                  <p>Also a web designer.</p>
                   <a href="#" className="about-btn">
                     <img src="/assets/images/icon.svg" alt="Button" />
                   </a>
@@ -76,7 +76,7 @@ const HomePage = () => {
 
                   <div>
                     <div className="about-project-box info-box shadow-box h-full">
-                      <Link className="overlay-link" to={"/works"}></Link>
+                      <Link className="overlay-link" to={"/work"}></Link>
                       <img
                         src="/assets/images/bg1.png"
                         alt="BG"
@@ -160,10 +160,10 @@ const HomePage = () => {
                       className="bg-img"
                     />
                     <div className="inner-profile-icons shadow-box">
-                      <a href="#">
+                      <a href="https://facebook.com">
                         <i className="iconoir-dribbble"></i>
                       </a>
-                      <a href="#">
+                      <a href="https://www.linkedin.com/in/buddhi-sagar-nyaupane-05b10b335/">
                         <i className="iconoir-twitter"></i>
                       </a>
                     </div>
@@ -197,7 +197,7 @@ const HomePage = () => {
                   </div>
 
                   <div className="client-item">
-                    <h1>+125</h1>
+                    <h1>+0</h1>
                     <p>
                       CLIENTS <br />
                       WORLDWIDE
@@ -205,7 +205,7 @@ const HomePage = () => {
                   </div>
 
                   <div className="client-item">
-                    <h1>+210</h1>
+                    <h1>+5</h1>
                     <p>
                       Total <br />
                       Projects
