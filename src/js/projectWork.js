@@ -1,7 +1,7 @@
 export const projectWork = [
   {
     id: crypto.randomUUID(),
-    image: "/images/Nepal-trip-thumbnail.jpg",
+    image: "/Nepal-trip-thumbnail.jpg",
     url: "https://nepaltrip-quest.vercel.app/",
     title: "Nepal trip",
     content:
@@ -9,14 +9,14 @@ export const projectWork = [
   },
   {
     id: crypto.randomUUID(),
-    image: "/images/ace-the-himilaya.webp",
+    image: "/ace-the-himilaya.webp",
     url: "",
     title: "The Himalyas Journey",
     content: "This project deals with Booking Journey form here to there ",
   },
   {
     id: crypto.randomUUID(),
-    image: "images/chat-bot.jpg",
+    image: "/chat-bot.jpg",
     url: "",
     title: "Chatbot",
     content:
@@ -24,7 +24,7 @@ export const projectWork = [
   },
   {
     id: crypto.randomUUID(),
-    image: "images/e-commerce.jpg",
+    image: "/e-commerce.jpg",
     url: "",
     title: "E-commerce",
     content:

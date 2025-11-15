@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content text-center">
           <Link to="/" className="logo">
-            <img src="/public/logo.png" alt="Logo" height="100" />
+            <img src="/logo.png" alt="Logo" height="100" />
           </Link>
           <ul className="footer-menu">
             <li>
