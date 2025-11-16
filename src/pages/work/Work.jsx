@@ -1,21 +1,21 @@
-// import Footer from "../../components/footer";
+import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 import { projectWork } from "../../js/projectWork";
+import "../../../stylesheets/index.css";
+import ScrollToTop from "../../components/ScrollToTop";
 
 const Work = () => {
   return (
     <>
+      <ScrollToTop />
       <Navbar />
-      <div
-        className="grid  p-5"
-        style={{ gridTemplateColumns: "auto auto auto" }}
-      >
+      <div className="mt-5 project-work">
         {projectWork.map((item) => {
           return (
             <div
               key={item.id}
               onClick={() => window.open(item.url)}
-              className=""
+              className="project-work-specific"
             >
               <img
                 src={item.image}
@@ -26,11 +26,12 @@ const Work = () => {
                 }}
               />
               <h4 className="pt-3 text-white">{item.title}</h4>
-              <p className="w-75 pb-5">{item.content}</p>
+              <p className=" w-75">{item.content}</p>
             </div>
           );
         })}
       </div>
+      <Footer />
     </>
   );
 };

@@ -12,7 +12,7 @@ const About = () => {
               <div className="about-image-box shadow-box">
                 <img src="assets/images/bg1.png" alt="BG" className="bg-img" />
                 <div className="image-inner">
-                  <img src="/profile.jpg" alt="About Me" />
+                  <img src="/profile.jpg" alt="Buddhi Sagar" />
                 </div>
               </div>
             </div>
@@ -44,7 +44,9 @@ const About = () => {
                   <li>
                     <p className="date">2023 - 2025</p>
                     <h2>Designer & Developer</h2>
-                    <p className="type">Web development | canva expert | figma</p>
+                    <p className="type">
+                      Web development | canva expert | figma
+                    </p>
                   </li>
                   <li>
                     <p className="date">2023 - 2025</p>

@@ -339,6 +339,10 @@ ol {
     color: #ffffff;
 }
 
+.client-item {
+    cursor: pointer;
+}
+
 .info-box.about-client-box .clients .client-item {
     position: relative;
     border-radius: 30px;

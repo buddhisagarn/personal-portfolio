@@ -1,8 +1,10 @@
 import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate();
   return (
     <main className="main-homepage">
       <Navbar />
@@ -15,7 +17,7 @@ const HomePage = () => {
                 <a className="overlay-link" href="about.html"></a>
                 <img src="/assets/images/bg1.png" alt="BG" className="bg-img" />
                 <div className="img-box">
-                  <img src="/profile.jpg" alt="About Me" />
+                  <img src="/profile.jpg" alt="Buddhi Sagar" />
                 </div>
                 <div className="infos">
                   <h4>A WEB Developer</h4>
@@ -204,7 +206,10 @@ const HomePage = () => {
                     </p>
                   </div>
 
-                  <div className="client-item">
+                  <div
+                    className="client-item"
+                    onClick={() => navigate("/work")}
+                  >
                     <h1>+5</h1>
                     <p>
                       Total <br />
@@ -235,7 +240,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
       <Footer />
     </main>
   );
