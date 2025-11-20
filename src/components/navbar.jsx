@@ -24,7 +24,9 @@ const Navbar = () => {
                 <Link to={"/contact"}>Contact</Link>
               </li>
             </ul>
-            <a className="theme-btn">Let&apos;s talk</a>
+            <Link className="theme-btn" to={"/letstalk"}>
+              Let&apos;s talk
+            </Link>
           </nav>
 
           <Link to={"/letstalk"} className="theme-btn">

@@ -29,9 +29,11 @@ export default function ContactPage() {
                 <div className="">
                   <h5 className="fw-semibold">Connect with me</h5>
                   <p className="text-secondary small mb-1">
-                   My team is here to help You.
+                    My team is here to help You.
                   </p>
-                  <p className="text-secondary small">rabinyaupane55@gmail.com</p>
+                  <p className="text-secondary small">
+                    rabinyaupane55@gmail.com
+                  </p>
                 </div>
 
                 <div className="mb-3">
