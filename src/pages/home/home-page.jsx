@@ -37,15 +37,21 @@ const HomePage = () => {
                     <div className="marquee">
                       <div>
                         <span>
-                          LATEST WORK AND <b>FEATURED</b>
+                          Buddhi Sagar Nyaupane <b>Nepal React Developer</b>
                           <img src="/assets/images/star1.svg" alt="Star" />
-                          LATEST WORK AND <b>FEATURED</b>
+                          Buddhi Sagar Nyaupane <b>Nepal React Developer</b>
                           <img src="/assets/images/star1.svg" alt="Star" />
-                          LATEST WORK AND <b>FEATURED</b>
+                          Buddhi Sagar Nyaupane <b>Nepal React Developer</b>
                           <img src="/assets/images/star1.svg" alt="Star" />
-                          LATEST WORK AND <b>FEATURED</b> LATEST WORK AND
+                          Buddhi Sagar Nyaupane <b>
+                            Nepal React Developer
+                          </b>{" "}
+                          Buddhi Sagar Nyaupane
                           <img src="/assets/images/star1.svg" alt="Star" />
-                          LATEST WORK AND <b>FEATURED</b> LATEST WORK AND
+                          Buddhi Sagar Nyaupane <b>
+                            Nepal React Developer
+                          </b>{" "}
+                          Buddhi Sagar Nyaupane
                           <img src="/assets/images/star1.svg" alt="Star" />
                         </span>
                       </div>
@@ -57,11 +63,7 @@ const HomePage = () => {
                   <div>
                     <div className="about-crenditials-box info-box shadow-box h-full">
                       <a className="overlay-link" href="credentials.html"></a>
-                      <img
-                        src="/assets/images/bg1.png"
-                        alt="BG"
-                        className="bg-img"
-                      />
+                      <img src="/me.jpg" alt="BG" className="bg-img" />
                       <img src="/assets/images/sign.png" alt="Sign" />
                       <div className="d-flex align-items-center justify-content-between">
                         <div className="infos">
@@ -84,7 +86,7 @@ const HomePage = () => {
                         alt="BG"
                         className="bg-img"
                       />
-                      <img src="/assets/images/my-works.png" alt="My Works" />
+                      <img src="/chat-bot.jpg" alt="My Works" />
                       <div className="d-flex align-items-center justify-content-between">
                         <div className="infos">
                           <h4>SHOWCASE</h4>
@@ -107,22 +109,21 @@ const HomePage = () => {
               <div className="blog-service-profile-wrap d-flex gap-24">
                 <div>
                   <div className="about-blog-box info-box shadow-box h-full">
-                    <a href="blog.html" className="overlay-link"></a>
+                    <Link to={"/blog"} className="overlay-link"></Link>
                     <img
                       src="/assets/images/bg1.png"
                       alt="BG"
                       className="bg-img"
                     />
-                    <img src="/assets/images/gfonts.png" alt="GFonts" />
+                    <img src="/bhagavad-gita.jpg" alt="GFonts" height="200" />
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="infos">
-                        <h4>Blog</h4>
-                        <h1>GFonts</h1>
+                        <h4>Blogs</h4>
+                        <h1>Bhagavad Gita</h1>
                       </div>
-
-                      <a href="blog.html" className="about-btn">
+                      <Link to={"/blog"} className="about-btn">
                         <img src="/assets/images/icon.svg" alt="Button" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

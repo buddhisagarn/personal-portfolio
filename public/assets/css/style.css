@@ -1685,7 +1685,7 @@ ol {
 
 /* # Footer */
 .footer-area {
-    padding-top: 128px;
+    padding-top: 50px;
     padding-bottom: 78px;
 }
 
@@ -1942,6 +1942,10 @@ ol {
 
     .breadcrumb-area .breadcrumb-content .section-heading br {
         display: none;
+    }
+
+    .about-area {
+        padding: 0;
     }
 }
 

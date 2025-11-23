@@ -25,7 +25,7 @@ export const projectWork = [
   {
     id: crypto.randomUUID(),
     image: "/e-commerce.jpg",
-    url: "https://e-commerce-chi-five-30.vercel.app/",
+    url: "https://e-business-three.vercel.app/",
     title: "E-commerce",
     content:
       "This project is deals with travelling, managing the website and making the journey intresting while tarvelling",
