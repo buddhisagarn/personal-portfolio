@@ -21,7 +21,7 @@ const BlogPage = () => {
               {blog.title}
             </h1>
             <p className="text-white  bg-info">
-              By {blog.author} around {blog.date}
+              By {blog.author} on {blog.date}
             </p>
             <p className="text-white">{blog.summary}</p>
           </div>

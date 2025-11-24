@@ -1,7 +1,10 @@
+import Credentials from "../../components/credentials";
 import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import Profile from "../../components/profile";
+import LetsWork from "../../components/letswork";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -37,21 +40,17 @@ const HomePage = () => {
                     <div className="marquee">
                       <div>
                         <span>
-                          Buddhi Sagar Nyaupane <b>Nepal React Developer</b>
+                          Buddhi Sagar Neupane <b>Nepal React Developer</b>
                           <img src="/assets/images/star1.svg" alt="Star" />
-                          Buddhi Sagar Nyaupane <b>Nepal React Developer</b>
+                          Buddhi Sagar Neupane <b>Nepal React Developer</b>
                           <img src="/assets/images/star1.svg" alt="Star" />
-                          Buddhi Sagar Nyaupane <b>Nepal React Developer</b>
+                          Buddhi Sagar Neupane <b>Nepal React Developer</b>
                           <img src="/assets/images/star1.svg" alt="Star" />
-                          Buddhi Sagar Nyaupane <b>
-                            Nepal React Developer
-                          </b>{" "}
-                          Buddhi Sagar Nyaupane
+                          Buddhi Sagar Neupane <b>Nepal React Developer</b>{" "}
+                          Buddhi Sagar Neupane
                           <img src="/assets/images/star1.svg" alt="Star" />
-                          Buddhi Sagar Nyaupane <b>
-                            Nepal React Developer
-                          </b>{" "}
-                          Buddhi Sagar Nyaupane
+                          Buddhi Sagar Neupane <b>Nepal React Developer</b>{" "}
+                          Buddhi Sagar Neupane
                           <img src="/assets/images/star1.svg" alt="Star" />
                         </span>
                       </div>
@@ -60,24 +59,7 @@ const HomePage = () => {
                 </div>
 
                 <div className="gx-row d-flex gap-24">
-                  <div>
-                    <div className="about-crenditials-box info-box shadow-box h-full">
-                      <a className="overlay-link" href="credentials.html"></a>
-                      <img src="/me.jpg" alt="BG" className="bg-img" />
-                      <img src="/assets/images/sign.png" alt="Sign" />
-                      <div className="d-flex align-items-center justify-content-between">
-                        <div className="infos">
-                          <h4>more about me</h4>
-                          <h1>Credentials</h1>
-                        </div>
-
-                        <a href="credentials.html" className="about-btn">
-                          <img src="/assets/images/icon.svg" alt="Button" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
+                  <Credentials />
                   <div>
                     <div className="about-project-box info-box shadow-box h-full">
                       <Link className="overlay-link" to={"/work"}></Link>
@@ -132,7 +114,7 @@ const HomePage = () => {
                   <div className="about-services-box info-box shadow-box h-full">
                     <a href="service.html" className="overlay-link"></a>
                     <img
-                      src="/assets/images/bg1.png"
+                      src="/service-we-offer.jpg"
                       alt="BG"
                       className="bg-img"
                     />
@@ -156,31 +138,7 @@ const HomePage = () => {
                 </div>
 
                 <div>
-                  <div className="about-profile-box info-box shadow-box h-full">
-                    <img
-                      src="/assets/images/bg1.png"
-                      alt="BG"
-                      className="bg-img"
-                    />
-                    <div className="inner-profile-icons shadow-box">
-                      <a href="https://facebook.com">
-                        <i className="iconoir-dribbble"></i>
-                      </a>
-                      <a href="https://www.linkedin.com/in/buddhi-sagar-nyaupane-05b10b335/">
-                        <i className="iconoir-twitter"></i>
-                      </a>
-                    </div>
-                    <div className="d-flex align-items-center justify-content-between">
-                      <div className="infos">
-                        <h4>Stay with me</h4>
-                        <h1>Profiles</h1>
-                      </div>
-
-                      <a href="contact.html" className="about-btn">
-                        <img src="/assets/images/icon.svg" alt="Button" />
-                      </a>
-                    </div>
-                  </div>
+                  <Profile />
                 </div>
               </div>
             </div>
@@ -220,24 +178,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
-              <div className="about-contact-box info-box shadow-box">
-                <a className="overlay-link" href="contact.html"></a>
-                <img src="/assets/images/bg1.png" alt="BG" className="bg-img" />
-                <img
-                  src="/assets/images/icon2.png"
-                  alt="Icon"
-                  className="star-icon"
-                />
-                <h1>
-                  Let&apos;s <br />
-                  work <span>together.</span>
-                </h1>
-                <a href="#" className="about-btn">
-                  <img src="/assets/images/icon.svg" alt="Button" />
-                </a>
-              </div>
-            </div>
+            <LetsWork />
           </div>
         </div>
       </section>

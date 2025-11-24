@@ -304,9 +304,14 @@ ol {
     transition: .3s;
 }
 
-.info-box .inner-profile-icons a:hover {
-    background: #ffffff;
-    color: #0F0F0F;
+.instagram-profile-photo {
+    background-image: url("/instagram.avif");
+    background-size: contain;
+}
+
+.linkedin-profile-photo {
+    background-image: url("/linked-in.jpg");
+    background-size: contain;
 }
 
 .info-box .inner-profile-icons a:before {

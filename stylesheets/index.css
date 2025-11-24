@@ -55,12 +55,36 @@
 
 .blogs-details {
   height: 450px;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.blog-heading {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: -2px;
+}
+
+.blog-summary {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
+.blog-accordion {
+  background-color: rgba(0, 0, 0, 0.055) !important;
+}
+
+.blog-content {
+  background-color: rgba(181, 187, 233, 0.329);
 }
 
 .blog-post:hover {
   transition: 1s;
   transform: scale(1.05);
   cursor: pointer;
+}
+
+.blog-question {
+  background-color: rgba(151, 192, 1, 0.411) !important;
 }
 
 .blog-post img {

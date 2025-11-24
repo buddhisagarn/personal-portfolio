@@ -1,5 +1,8 @@
+import Credentials from "../../components/credentials";
 import Footer from "../../components/footer";
+import LetsWork from "../../components/letswork";
 import Navbar from "../../components/navbar";
+import Profile from "../../components/profile";
 
 const About = () => {
   return (
@@ -78,76 +81,11 @@ const About = () => {
             <div className="col-md-12">
               <div className="d-flex profile-contact-credentials-wrap gap-24">
                 <div>
-                  <div className="about-profile-box info-box shadow-box h-full">
-                    <img
-                      src="assets/images/bg1.png"
-                      alt="BG"
-                      className="bg-img"
-                    />
-                    <div className="inner-profile-icons shadow-box">
-                      <a href="#">
-                        <i className="iconoir-dribbble"></i>
-                      </a>
-                      <a href="#">
-                        <i className="iconoir-twitter"></i>
-                      </a>
-                    </div>
-                    <div className="d-flex align-items-center justify-content-between">
-                      <div className="infos">
-                        <h4>Stay with me</h4>
-                        <h1>Profiles</h1>
-                      </div>
-
-                      <a href="contact.html" className="about-btn">
-                        <img src="assets/images/icon.svg" alt="Button" />
-                      </a>
-                    </div>
-                  </div>
+                  <Profile />
                 </div>
-
-                <div className="flex-1">
-                  <div className="about-contact-box info-box shadow-box">
-                    <a className="overlay-link" href="contact.html"></a>
-                    <img
-                      src="assets/images/bg1.png"
-                      alt="BG"
-                      className="bg-img"
-                    />
-                    <img
-                      src="assets/images/icon2.png"
-                      alt="Icon"
-                      className="star-icon"
-                    />
-                    <h1>
-                      Let&apos;s <br />
-                      work <span>together.</span>
-                    </h1>
-                    <a href="contact.html" className="about-btn">
-                      <img src="assets/images/icon.svg" alt="Button" />
-                    </a>
-                  </div>
-                </div>
-
+                <LetsWork />
                 <div className="h-full">
-                  <div className="about-crenditials-box info-box shadow-box">
-                    <a className="overlay-link" href="credentials.html"></a>
-                    <img
-                      src="assets/images/bg1.png"
-                      alt="BG"
-                      className="bg-img"
-                    />
-                    <img src="assets/images/sign.png" alt="Sign" />
-                    <div className="d-flex align-items-center justify-content-between">
-                      <div className="infos">
-                        <h4>more about me</h4>
-                        <h1>Credentials</h1>
-                      </div>
-
-                      <a href="credentials.html" className="about-btn">
-                        <img src="assets/images/icon.svg" alt="Button" />
-                      </a>
-                    </div>
-                  </div>
+                  <Credentials />
                 </div>
               </div>
             </div>
