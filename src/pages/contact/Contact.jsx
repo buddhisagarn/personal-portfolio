@@ -56,7 +56,16 @@ export default function ContactPage() {
 
             {/* Right Form */}
             <div className="col-12 col-md-6">
-              <form className="p-4 rounded-4 bg-dark border border-secondary shadow">
+              <form
+                className="p-4 rounded-4 bg-dark border border-secondary shadow"
+                action="https://api.web3forms.com/submit"
+                method="POST"
+              >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="0e64ed79-309b-4819-9e3b-2a6ae423eeca"
+                ></input>
                 {/* Name Fields */}
                 <div className="row g-3">
                   <div className="col-12 col-md-6">
@@ -67,6 +76,7 @@ export default function ContactPage() {
                       type="text"
                       className="form-control bg-transparent text-white border-secondary"
                       placeholder="Your first Name"
+                      required
                     />
                   </div>
 
@@ -78,6 +88,7 @@ export default function ContactPage() {
                       type="text"
                       className="form-control bg-transparent text-white border-secondary"
                       placeholder="Your Last Name"
+                      required
                     />
                   </div>
                 </div>
@@ -103,6 +114,7 @@ export default function ContactPage() {
                     type="email"
                     className="form-control bg-transparent text-white border-secondary"
                     placeholder="Your email address"
+                    required
                   />
                 </div>
 
@@ -119,6 +131,7 @@ export default function ContactPage() {
                       type="text"
                       className="form-control bg-transparent text-white border-secondary"
                       placeholder="(+977) 9762731102"
+                      required
                     />
                   </div>
                 </div>
@@ -141,6 +154,7 @@ export default function ContactPage() {
                     className="form-check-input"
                     type="checkbox"
                     id="privacy"
+                    required
                   />
                   <label
                     className="form-check-label small text-secondary"

@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 export default function Credentials() {
   return (
     <div>
       <div className="about-crenditials-box info-box shadow-box h-full">
-        <a className="overlay-link" href="credentials.html"></a>
+        <Link className="overlay-link" to="/about"></Link>
         <img src="/me.jpg" alt="BG" className="bg-img" />
         <img src="/assets/images/sign.png" alt="Sign" />
         <div className="d-flex align-items-center justify-content-between">
@@ -11,9 +12,9 @@ export default function Credentials() {
             <h1>Credentials</h1>
           </div>
 
-          <a href="credentials.html" className="about-btn">
+          <Link to="/about" className="about-btn">
             <img src="/assets/images/icon.svg" alt="Button" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

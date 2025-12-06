@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Profile() {
   return (
     <div className="about-profile-box info-box shadow-box h-full">
@@ -22,9 +23,9 @@ export default function Profile() {
           <h1>Profiles</h1>
         </div>
 
-        <a href="contact.html" className="about-btn">
+        <Link to="/contact" className="about-btn">
           <img src="/assets/images/icon.svg" alt="Button" />
-        </a>
+        </Link>
       </div>
     </div>
   );

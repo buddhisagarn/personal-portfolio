@@ -17,7 +17,7 @@ const HomePage = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="about-me-box shadow-box">
-                <a className="overlay-link" href="about.html"></a>
+                <Link className="overlay-link" to="/about"></Link>
                 <img src="/assets/images/bg1.png" alt="BG" className="bg-img" />
                 <div className="img-box">
                   <img src="/profile.jpg" alt="Buddhi Sagar" />
@@ -26,9 +26,9 @@ const HomePage = () => {
                   <h4>A WEB Developer</h4>
                   <h1>Buddhi Sagar Nyaupane.</h1>
                   <p>Also a web designer.</p>
-                  <a href="#" className="about-btn">
+                  <Link to="/about" className="about-btn">
                     <img src="/assets/images/icon.svg" alt="Button" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -75,9 +75,9 @@ const HomePage = () => {
                           <h1>Projects</h1>
                         </div>
 
-                        <a href="#" className="about-btn">
+                        <Link to="/work" className="about-btn">
                           <img src="/assets/images/icon.svg" alt="Button" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -112,7 +112,7 @@ const HomePage = () => {
 
                 <div className="flex-1">
                   <div className="about-services-box info-box shadow-box h-full">
-                    <a href="service.html" className="overlay-link"></a>
+                    <Link to="/services" className="overlay-link"></Link>
                     <img
                       src="/service-we-offer.jpg"
                       alt="BG"
@@ -129,10 +129,9 @@ const HomePage = () => {
                         <h4>specialization</h4>
                         <h1>Services Offering</h1>
                       </div>
-
-                      <a href="service.html" className="about-btn">
+                      <Link to="/services" className="about-btn">
                         <img src="/assets/images/icon.svg" alt="Button" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

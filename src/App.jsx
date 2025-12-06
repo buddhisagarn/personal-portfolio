@@ -7,6 +7,7 @@ import Work from "./pages/work/Work";
 import LetsTalk from "./pages/Letstalk";
 import BlogPage from "./pages/blog";
 import Blog from "./pages/blog-details";
+import Services from "./pages/services";
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/letstalk" element={<LetsTalk />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blogdetails/:id" element={<Blog />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
     </BrowserRouter>
   );

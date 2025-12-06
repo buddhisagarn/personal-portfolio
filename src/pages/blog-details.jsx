@@ -17,7 +17,7 @@ export default function Blog() {
     return <p className="text-white">Blog not found</p>;
   }
   return (
-    <div>
+    <div className="blog-details-sec">
       <Navbar />
       <div className="blog-section">
         <div className="container p-4 blog-details">
@@ -87,6 +87,9 @@ export default function Blog() {
         </div>
       </div>
       <Footer />
+      <button className="backbutton-blog" onClick={() => window.history.back()}>
+        Back
+      </button>
     </div>
   );
 }
