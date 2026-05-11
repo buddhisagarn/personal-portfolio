@@ -1,100 +1,141 @@
-import Credentials from "../../components/credentials";
-import Footer from "../../components/footer";
-import LetsWork from "../../components/letswork";
 import Navbar from "../../components/navbar";
-import Profile from "../../components/profile";
+import Footer from "../../components/footer";
+import { Link } from "react-router-dom";
+import ScrollToTop from "../../components/ScrollToTop";
 
-const About = () => {
+const stack = [
+  "React", "JavaScript", "HTML5", "CSS3", "Tailwind CSS",
+  "Figma", "Git", "Node.js", "Python", "Firebase", "Vite", "Canva",
+];
+
+export default function About() {
   return (
     <>
+      <ScrollToTop />
       <Navbar />
-      <section className="about-area">
-        <div className="container">
-          <div className="d-flex about-me-wrap align-items-start gap-24">
-            <div>
-              <div className="about-image-box shadow-box">
-                <img src="assets/images/bg1.png" alt="BG" className="bg-img" />
-                <div className="image-inner">
-                  <img src="/profile.jpg" alt="Buddhi Sagar" />
-                </div>
-              </div>
-            </div>
 
-            <div className="about-details">
-              <h1 className="section-heading">
-                <img src="assets/images/star-2.png" alt="Star" /> Self-summary{" "}
-                <img src="assets/images/star-2.png" alt="Star" />
-              </h1>
-              <div className="about-details-inner shadow-box">
-                <img src="assets/images/icon2.png" alt="Star" />
-                <h1>Buddhi Sagar Nyaupane</h1>
-                <p>
-                  I am a student with a focus on web design, illustration, a
-                  visual development. I have a diverse range of experience
-                  having worked across various fields and industries.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="row mt-24">
-            <div className="col-md-6">
-              <div className="about-edc-exp about-experience shadow-box">
-                <img src="assets/images/bg1.png" alt="BG" className="bg-img" />
-                <h3>EXPERIENCE</h3>
-
-                <ul>
-                  <li>
-                    <p className="date">2023 - 2025</p>
-                    <h2>Designer & Developer</h2>
-                    <p className="type">
-                      Web development | canva expert | figma
-                    </p>
-                  </li>
-                  <li>
-                    <p className="date">2023 - 2025</p>
-                    <h2>Front-End Developer</h2>
-                    <p className="type">React</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="about-edc-exp about-education shadow-box">
-                <img src="assets/images/bg1.png" alt="BG" className="bg-img" />
-                <h3>EDUCATION</h3>
-
-                <ul>
-                  <li>
-                    <p className="date">2023 - 2027</p>
-                    <h2>
-                      Bachelor of Computer Science and Information Technology
-                    </h2>
-                    <p className="type">Pokhara University</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="row mt-24">
-            <div className="col-md-12">
-              <div className="d-flex profile-contact-credentials-wrap gap-24">
-                <div>
-                  <Profile />
-                </div>
-                <LetsWork />
-                <div className="h-full">
-                  <Credentials />
-                </div>
-              </div>
-            </div>
+      <div style={{ paddingTop: "64px" }}>
+        {/* Page header */}
+        <div className="page-header">
+          <div className="container">
+            <p className="text-label mb-4">About me</p>
+            <h1 className="display-lg">Who I am</h1>
           </div>
         </div>
-      </section>
+
+        {/* Main about section */}
+        <section className="section">
+          <div className="container">
+            <div className="about-grid">
+              {/* Photo */}
+              <div>
+                <div className="about-photo">
+                  <img src="/profile.jpg" alt="Buddhi Sagar Nyaupane" />
+                </div>
+              </div>
+
+              {/* Bio */}
+              <div className="about-body">
+                <p className="text-label mb-6">Introduction</p>
+
+                <h2 className="display-md mb-8">
+                  Buddhi Sagar Nyaupane
+                </h2>
+
+                <p>
+                  I'm a BSc CSIT student at Pokhara University with a deep passion for building things on the web.
+                  My focus sits at the intersection of good design and solid engineering — I care equally about
+                  how things look and how they work.
+                </p>
+                <p>
+                  Over the past two years, I've worked across front-end development, UI/UX design, and AI-integrated
+                  web applications. I enjoy taking a project from a rough idea to a polished, deployed product.
+                </p>
+                <p>
+                  Outside of coding, I write about technology and philosophy — including a blog series exploring
+                  the Bhagavad Gita through a modern lens. I believe that balance between logic and reflection
+                  makes for a better thinker and a better builder.
+                </p>
+                <p>
+                  I'm currently looking for internships or entry-level roles where I can contribute, learn fast,
+                  and grow alongside a team.
+                </p>
+
+                {/* Contact info */}
+                <div style={{ margin: "var(--space-8) 0", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "var(--space-4)" }}>
+                  {[
+                    { label: "Location", value: "Kathmandu, Nepal" },
+                    { label: "University", value: "Pokhara University" },
+                    { label: "Email", value: "rabinyaupane55@gmail.com" },
+                    { label: "Phone", value: "+977 9762731102" },
+                  ].map((item) => (
+                    <div key={item.label}>
+                      <p className="text-label mb-1">{item.label}</p>
+                      <p style={{ fontSize: "0.9rem", color: "var(--color-text)", fontWeight: 500 }}>{item.value}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="flex gap-3">
+                  <Link to="/contact" className="btn btn-primary btn-sm">Hire me</Link>
+                  <a
+                    href="https://www.linkedin.com/in/buddhi-sagar-nyaupane-05b10b335/"
+                    target="_blank" rel="noreferrer"
+                    className="btn btn-secondary btn-sm"
+                  >
+                    LinkedIn →
+                  </a>
+                </div>
+
+                {/* Experience */}
+                <div className="mt-12">
+                  <p className="text-label mb-6">Experience</p>
+                  <div className="timeline">
+                    {[
+                      { date: "2023–2025", title: "Designer & Developer", sub: "Web Development · Canva Expert · Figma" },
+                      { date: "2023–2025", title: "Front-End Developer", sub: "React · JavaScript · Responsive Design" },
+                    ].map((item) => (
+                      <div key={item.title} className="timeline-item">
+                        <span className="timeline-date">{item.date}</span>
+                        <div>
+                          <div className="timeline-title">{item.title}</div>
+                          <div className="timeline-sub">{item.sub}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Education */}
+                <div className="mt-12">
+                  <p className="text-label mb-6">Education</p>
+                  <div className="timeline">
+                    <div className="timeline-item">
+                      <span className="timeline-date">2023–2027</span>
+                      <div>
+                        <div className="timeline-title">BSc Computer Science & Information Technology</div>
+                        <div className="timeline-sub">Pokhara University · Currently Enrolled</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Stack */}
+                <div className="mt-12">
+                  <p className="text-label mb-6">Technologies</p>
+                  <div className="stack-grid">
+                    {stack.map((t) => (
+                      <span key={t} className="stack-pill">{t}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
       <Footer />
     </>
   );
-};
-
-export default About;
+}

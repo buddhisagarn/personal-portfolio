@@ -1,189 +1,321 @@
-import Credentials from "../../components/credentials";
-import Footer from "../../components/footer";
-import Navbar from "../../components/navbar";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import Profile from "../../components/profile";
-import LetsWork from "../../components/letswork";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
+import { projectWork } from "../../js/projectWork";
+import ScrollToTop from "../../components/ScrollToTop";
+import {
+  FaReact,
+  FaPalette,
+  FaGlobe,
+  FaMobileAlt,
+  FaRobot,
+  FaSearch,
+  FaGraduationCap,
+} from "react-icons/fa";
 
-const HomePage = () => {
-  const navigate = useNavigate();
+const skills = [
+  {
+    icon: <FaReact />,
+    title: "React Development",
+    desc: "Building fast, scalable SPAs and web apps with React, hooks, and modern patterns.",
+  },
+  {
+    icon: <FaPalette />,
+    title: "UI / UX Design",
+    desc: "Crafting clean, user-centered interfaces using Figma and design systems.",
+  },
+  {
+    icon: <FaGlobe />,
+    title: "Full-Stack Web",
+    desc: "End-to-end development with HTML, CSS, JavaScript, and backend integrations.",
+  },
+  {
+    icon: <FaMobileAlt />,
+    title: "Responsive Design",
+    desc: "Mobile-first layouts that look great on every screen size and device.",
+  },
+  {
+    icon: <FaRobot />,
+    title: "AI Integration",
+    desc: "Incorporating AI and ML APIs to build intelligent, adaptive applications.",
+  },
+  {
+    icon: <FaSearch />,
+    title: "SEO Optimization",
+    desc: "Technical SEO, performance tuning, and content structure for higher rankings.",
+  },
+];
+
+const stack = [
+  "React",
+  "JavaScript (ES6+)",
+  "HTML5 & CSS3",
+  "Tailwind CSS",
+  "Figma",
+  "Git & GitHub",
+  "Node.js",
+  "Python",
+  "Firebase",
+  "Vite",
+];
+
+export default function HomePage() {
   return (
-    <main className="main-homepage">
+    <>
+      <ScrollToTop />
       <Navbar />
 
-      <section className="about-area">
+      {/* ── HERO ─────────────────────────────────────── */}
+      <section className="hero">
         <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <div className="about-me-box shadow-box">
-                <Link className="overlay-link" to="/about"></Link>
-                <img src="/assets/images/bg1.png" alt="BG" className="bg-img" />
-                <div className="img-box">
-                  <img src="/profile.jpg" alt="Buddhi Sagar" />
-                </div>
-                <div className="infos">
-                  <h4>A WEB Developer</h4>
-                  <h1>Buddhi Sagar Nyaupane.</h1>
-                  <p>Also a web designer.</p>
-                  <Link to="/about" className="about-btn">
-                    <img src="/assets/images/icon.svg" alt="Button" />
-                  </Link>
-                </div>
+          <div className="hero-grid">
+            {/* Left */}
+            <div>
+              <div className="hero-eyebrow">
+                <span className="dot" />
+                Available for opportunities
               </div>
-            </div>
 
-            <div className="col-md-6">
-              <div className="about-credentials-wrap">
-                <div>
-                  <div className="banner shadow-box">
-                    <div className="marquee">
-                      <div>
-                        <span>
-                          Buddhi Sagar Neupane <b>Nepal React Developer</b>
-                          <img src="/assets/images/star1.svg" alt="Star" />
-                          Buddhi Sagar Neupane <b>Nepal React Developer</b>
-                          <img src="/assets/images/star1.svg" alt="Star" />
-                          Buddhi Sagar Neupane <b>Nepal React Developer</b>
-                          <img src="/assets/images/star1.svg" alt="Star" />
-                          Buddhi Sagar Neupane <b>Nepal React Developer</b>{" "}
-                          Buddhi Sagar Neupane
-                          <img src="/assets/images/star1.svg" alt="Star" />
-                          Buddhi Sagar Neupane <b>Nepal React Developer</b>{" "}
-                          Buddhi Sagar Neupane
-                          <img src="/assets/images/star1.svg" alt="Star" />
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <h1 className="display-xl hero-title">
+                Buddhi Sagar
+                <br />
+                <em>Nyaupane.</em>
+              </h1>
 
-                <div className="gx-row d-flex gap-24">
-                  <Credentials />
-                  <div>
-                    <div className="about-project-box info-box shadow-box h-full">
-                      <Link className="overlay-link" to={"/work"}></Link>
-                      <img
-                        src="/assets/images/bg1.png"
-                        alt="BG"
-                        className="bg-img"
-                      />
-                      <img src="/chat-bot.jpg" alt="My Works" />
-                      <div className="d-flex align-items-center justify-content-between">
-                        <div className="infos">
-                          <h4>SHOWCASE</h4>
-                          <h1>Projects</h1>
-                        </div>
+              <p className="hero-desc">
+                A Computer Science student and front-end developer based in
+                Nepal. I build clean, fast, and accessible web experiences —
+                from design to deployment.
+              </p>
 
-                        <Link to="/work" className="about-btn">
-                          <img src="/assets/images/icon.svg" alt="Button" />
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row mt-24">
-            <div className="col-md-12">
-              <div className="blog-service-profile-wrap d-flex gap-24">
-                <div>
-                  <div className="about-blog-box info-box shadow-box h-full">
-                    <Link to={"/blog"} className="overlay-link"></Link>
-                    <img
-                      src="/assets/images/bg1.png"
-                      alt="BG"
-                      className="bg-img"
-                    />
-                    <img src="/bhagavad-gita.jpg" alt="GFonts" height="200" />
-                    <div className="d-flex align-items-center justify-content-between">
-                      <div className="infos">
-                        <h4>Blogs</h4>
-                        <h1>Bhagavad Gita</h1>
-                      </div>
-                      <Link to={"/blog"} className="about-btn">
-                        <img src="/assets/images/icon.svg" alt="Button" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex-1">
-                  <div className="about-services-box info-box shadow-box h-full">
-                    <Link to="/services" className="overlay-link"></Link>
-                    <img
-                      src="/service-we-offer.jpg"
-                      alt="BG"
-                      className="bg-img"
-                    />
-                    <div className="icon-boxes">
-                      <i className="iconoir-camera"></i>
-                      <i className="iconoir-design-pencil"></i>
-                      <i className="iconoir-color-filter"></i>
-                      <i className="iconoir-dev-mode-phone"></i>
-                    </div>
-                    <div className="d-flex align-items-center justify-content-between">
-                      <div className="infos">
-                        <h4>specialization</h4>
-                        <h1>Services Offering</h1>
-                      </div>
-                      <Link to="/services" className="about-btn">
-                        <img src="/assets/images/icon.svg" alt="Button" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <Profile />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row mt-24">
-            <div className="col-md-6">
-              <div className="about-client-box info-box shadow-box">
-                <img src="/assets/images/bg1.png" alt="BG" className="bg-img" />
-                <div className="clients d-flex align-items-start gap-24 justify-content-center">
-                  <div className="client-item">
-                    <h1>02</h1>
-                    <p>
-                      Years <br />
-                      Experience
-                    </p>
-                  </div>
-
-                  <div className="client-item">
-                    <h1>+0</h1>
-                    <p>
-                      CLIENTS <br />
-                      WORLDWIDE
-                    </p>
-                  </div>
-
-                  <div
-                    className="client-item"
-                    onClick={() => navigate("/work")}
+              <div className="hero-actions">
+                <Link to="/work" className="btn btn-primary">
+                  View my work
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
                   >
-                    <h1>+5</h1>
-                    <p>
-                      Total <br />
-                      Projects
-                    </p>
+                    <path d="M7 17L17 7M17 7H7M17 7v10" />
+                  </svg>
+                </Link>
+                <Link to="/contact" className="btn btn-secondary">
+                  Get in touch
+                </Link>
+              </div>
+
+              <div className="hero-scroll">
+                <span className="hero-scroll-line" />
+                Scroll to explore
+              </div>
+            </div>
+
+            {/* Right — photo */}
+            <div className="hero-photo-wrap">
+              <div className="hero-photo">
+                <img src="/profile.jpg" alt="Buddhi Sagar Nyaupane" />
+              </div>
+              {/* Floating badge */}
+              <div
+                className="hero-badge"
+                style={{ bottom: "var(--space-6)", left: "-20px" }}
+              >
+                <div className="hero-badge-icon">
+                  <FaGraduationCap />
+                </div>
+                <div>
+                  <div
+                    style={{
+                      fontSize: "0.78rem",
+                      fontWeight: 600,
+                      color: "var(--color-text)",
+                    }}
+                  >
+                    BSc CSIT
+                  </div>
+                  <div
+                    style={{
+                      fontSize: "0.72rem",
+                      color: "var(--color-text-muted)",
+                    }}
+                  >
+                    Pokhara University
+                  </div>
+                </div>
+              </div>
+              <div
+                className="hero-badge"
+                style={{
+                  top: "var(--space-6)",
+                  right: "-20px",
+                  left: "auto",
+                  bottom: "auto",
+                }}
+              >
+                <div className="hero-badge-icon">
+                  <FaReact />
+                </div>
+                <div>
+                  <div
+                    style={{
+                      fontSize: "0.78rem",
+                      fontWeight: 600,
+                      color: "var(--color-text)",
+                    }}
+                  >
+                    React Developer
+                  </div>
+                  <div
+                    style={{
+                      fontSize: "0.72rem",
+                      color: "var(--color-text-muted)",
+                    }}
+                  >
+                    2+ years building
                   </div>
                 </div>
               </div>
             </div>
-            <LetsWork />
           </div>
         </div>
       </section>
-      <Footer />
-    </main>
-  );
-};
 
-export default HomePage;
+      {/* ── STATS ────────────────────────────────────── */}
+      <div className="stats-strip">
+        <div className="container">
+          <div className="stats-grid">
+            {[
+              { n: "2+", l: "Years Experience" },
+              { n: "5+", l: "Projects Built" },
+              { n: "3", l: "Services Offered" },
+              { n: "100%", l: "Passion" },
+            ].map((s) => (
+              <div key={s.l} className="stat-item">
+                <div className="stat-number">{s.n}</div>
+                <div className="stat-label">{s.l}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* ── SKILLS / SERVICES ────────────────────────── */}
+      <section className="section" style={{ background: "var(--color-bg)" }}>
+        <div className="container">
+          <div className="section-header-row">
+            <div>
+              <p className="text-label mb-4">What I do</p>
+              <h2 className="display-lg">Skills &amp; Services</h2>
+            </div>
+            <Link to="/work" className="btn btn-secondary btn-sm">
+              See all work →
+            </Link>
+          </div>
+
+          <div className="skills-grid">
+            {skills.map((s) => (
+              <div key={s.title} className="skill-card">
+                <div className="skill-icon">{s.icon}</div>
+                <div className="skill-title">{s.title}</div>
+                <div className="skill-desc">{s.desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── FEATURED PROJECTS ────────────────────────── */}
+      <section
+        className="section"
+        style={{ background: "var(--color-bg-soft)" }}
+      >
+        <div className="container">
+          <div className="section-header-row">
+            <div>
+              <p className="text-label mb-4">Selected work</p>
+              <h2 className="display-lg">Featured Projects</h2>
+            </div>
+            <Link to="/work" className="btn btn-secondary btn-sm">
+              View all →
+            </Link>
+          </div>
+
+          <div className="projects-list">
+            {projectWork.slice(0, 3).map((item, i) => (
+              <div
+                key={item.id}
+                className="project-row"
+                onClick={() => window.open(item.url)}
+                style={{ cursor: "pointer" }}
+              >
+                <div className="project-content">
+                  <div className="project-number">
+                    {String(i + 1).padStart(2, "0")}
+                  </div>
+                  <h3 className="project-title">{item.title}</h3>
+                  <p className="text-body-sm">{item.content}</p>
+                  <div className="project-tags">
+                    <span className="tag">React</span>
+                    <span className="tag">Web</span>
+                  </div>
+                  <span className="project-link">
+                    Live site
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                    >
+                      <path d="M7 17L17 7M17 7H7M17 7v10" />
+                    </svg>
+                  </span>
+                </div>
+                <div className="project-img">
+                  <img src={item.image} alt={item.title} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── TECH STACK ───────────────────────────────── */}
+      <section className="section">
+        <div className="container">
+          <p className="text-label mb-4">Technologies</p>
+          <h2 className="display-md mb-8">Tech I Work With</h2>
+          <div className="stack-grid">
+            {stack.map((t) => (
+              <span key={t} className="stack-pill">
+                {t}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── CTA ──────────────────────────────────────── */}
+      <section className="section-sm">
+        <div className="container">
+          <div className="cta-section">
+            <h2 className="display-md">Let's build something great.</h2>
+            <p>
+              Open to internships, freelance projects, and full-time
+              opportunities.
+            </p>
+            <Link to="/contact" className="btn-cta">
+              Start a conversation →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  );
+}
