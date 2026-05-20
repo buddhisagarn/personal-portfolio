@@ -210,7 +210,7 @@ export const blogDetailsData = [
         items: [
           "Login to Netlify",
           "Click Add new site → Deploy manually ",
-          "Drag and drop your build or dist folde",
+          "Drag and drop your build or dist folder",
         ],
       },
       {
@@ -237,28 +237,79 @@ export const blogDetailsData = [
           "This tells Netlify to serve React routes correctly.",
         ],
       },
+    ],
+  },
+  {
+    id: 4,
+    title: "Building a Modern Portfolio with React",
+    author: "Buddhi Sagar Neupane",
+    date: "2026-03-12",
+    summary:
+      "The key steps for designing a fast, responsive portfolio with React, clean layout, and deploy-ready structure.",
+    content: [
       {
         type: "list",
-        question: "Add Environment Variables",
+        question: "Choose the Right Stack",
         items: [
-          "If your project uses keys, Go to Site settings → Environment variables",
-          "Add: REACT_APP_API_KEY = your_key",
-          "Never commit secret key to Github.",
+          "Use Vite for fast builds and easy configuration.",
+          "Add React Router for page navigation.",
+          "Use CSS modules or a simple global stylesheet for consistent styling.",
         ],
       },
       {
         type: "list",
-        question: "Common Errors & Fixes",
+        question: "Design a Clean Layout",
         items: [
-          "If your project uses keys, Go to Site settings → Environment variables",
-          "Add: REACT_APP_API_KEY = your_key",
-          "Never commit secret key to Github.",
+          "Keep the header simple with Home, About, Work, Blog, and Contact.",
+          "Show a hero section that highlights your name and specialties.",
+          "Use cards or grids for projects and blog previews.",
         ],
       },
       {
         type: "list",
-        question: "Add Environment Variables",
-        items: ["Missing dependencies → run:", "npm install"],
+        question: "Deploy and Maintain",
+        items: [
+          "Use Netlify, Vercel, or GitHub Pages for easy hosting.",
+          "Keep content up-to-date by adding new work and blog posts regularly.",
+          "Test on mobile and desktop before each update.",
+        ],
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Using AOS to Animate Your Website",
+    author: "Buddhi Sagar Neupane",
+    date: "2026-04-08",
+    summary:
+      "A guide to using the Animate On Scroll library to bring smooth motion to your portfolio pages.",
+    content: [
+      {
+        type: "list",
+        question: "Install and Set Up AOS",
+        items: [
+          "Install AOS with npm or include the stylesheet and script from CDN.",
+          "Initialize AOS in your main JavaScript or React useEffect hook.",
+          "Add data-aos attributes to the sections you want animated.",
+        ],
+      },
+      {
+        type: "list",
+        question: "Use Animations Wisely",
+        items: [
+          "Use fade, slide, and zoom effects for section entrances.",
+          "Avoid too many animations on one page to keep the experience smooth.",
+          "Test animations across devices to ensure performance remains good.",
+        ],
+      },
+      {
+        type: "list",
+        question: "Customize Your Effects",
+        items: [
+          "Use data-aos-duration to slow or speed animations.",
+          "Use data-aos-delay to stagger multiple elements.",
+          "Combine AOS with your own CSS for a polished look.",
+        ],
       },
     ],
   },

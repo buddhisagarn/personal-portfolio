@@ -82,10 +82,10 @@ export default function ContactPage() {
 
                 <div style={{ marginBottom: "var(--space-10)" }}>
                   {contactItems.map((item) => (
-                    <div key={item.label} className="contact-info-item">
+                    <div key={item.label} className="contact-info-item p-2">
                       <div className="contact-icon">{item.icon}</div>
                       <div>
-                        <p className="text-label mb-1">{item.label}</p>
+                        <p className="text-label mb-2">{item.label}</p>
                         {item.href ? (
                           <a
                             href={item.href}
@@ -189,6 +189,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="form-group">
+                    <br />
                     <label className="form-label">Email Address</label>
                     <input
                       type="email"
@@ -200,6 +201,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="form-group">
+                    <br />
                     <label className="form-label">Subject</label>
                     <input
                       type="text"
@@ -210,6 +212,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="form-group">
+                    <br />
                     <label className="form-label">Message</label>
                     <textarea
                       name="message"
@@ -219,7 +222,7 @@ export default function ContactPage() {
                       required
                     ></textarea>
                   </div>
-
+                  <br />
                   <button
                     type="submit"
                     className="btn btn-primary w-full"
@@ -245,7 +248,7 @@ export default function ContactPage() {
                       marginTop: "var(--space-3)",
                     }}
                   >
-                    I'll respond within 24 hours. No spam, ever.
+                    I'll respond within 24 hours.
                   </p>
                 </form>
               </div>

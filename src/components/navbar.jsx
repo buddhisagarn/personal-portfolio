@@ -20,26 +20,51 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="navbar-wrap" style={{ boxShadow: scrolled ? "0 1px 20px rgba(0,0,0,0.06)" : "none" }}>
+      <header
+        className="navbar-wrap"
+        style={{ boxShadow: scrolled ? "0 1px 20px rgba(0,0,0,0.06)" : "none" }}
+      >
         <div className="container">
           <div className="navbar-inner">
             {/* Logo */}
             <Link to="/" className="nav-logo">
-              Buddhi Sagar<span />
+              Buddhi Sagar
+              <span />
             </Link>
 
             {/* Desktop nav */}
             <nav className="nav-links">
-              <Link to="/" className={isActive("/") ? "active" : ""}>Home</Link>
-              <Link to="/about" className={isActive("/about") ? "active" : ""}>About</Link>
-              <Link to="/work" className={isActive("/work") ? "active" : ""}>Work</Link>
-              <Link to="/contact" className={isActive("/contact") ? "active" : ""}>Contact</Link>
+              <Link to="/" className={isActive("/") ? "active" : ""}>
+                Home
+              </Link>
+              <Link to="/about" className={isActive("/about") ? "active" : ""}>
+                About
+              </Link>
+              <Link to="/work" className={isActive("/work") ? "active" : ""}>
+                Work
+              </Link>
+              <Link to="/blog" className={isActive("/blog") ? "active" : ""}>
+                Blog
+              </Link>
+              <Link
+                to="/contact"
+                className={isActive("/contact") ? "active" : ""}
+              >
+                Contact
+              </Link>
             </nav>
 
             <Link to="/contact" className="nav-cta">
               Let's talk
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <path d="M7 17L17 7M17 7H7M17 7v10"/>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+              >
+                <path d="M7 17L17 7M17 7H7M17 7v10" />
               </svg>
             </Link>
 
@@ -51,13 +76,19 @@ const Navbar = () => {
             >
               {menuOpen ? (
                 <>
-                  <span style={{ transform: "rotate(45deg) translate(5px, 5px)" }} />
+                  <span
+                    style={{ transform: "rotate(45deg) translate(5px, 5px)" }}
+                  />
                   <span style={{ opacity: 0 }} />
-                  <span style={{ transform: "rotate(-45deg) translate(5px, -5px)" }} />
+                  <span
+                    style={{ transform: "rotate(-45deg) translate(5px, -5px)" }}
+                  />
                 </>
               ) : (
                 <>
-                  <span /><span /><span />
+                  <span />
+                  <span />
+                  <span />
                 </>
               )}
             </button>
@@ -67,11 +98,28 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       <div className={`mobile-menu${menuOpen ? " open" : ""}`}>
-        <Link to="/" className={isActive("/") ? "active" : ""}>Home</Link>
-        <Link to="/about" className={isActive("/about") ? "active" : ""}>About</Link>
-        <Link to="/work" className={isActive("/work") ? "active" : ""}>Work</Link>
-        <Link to="/contact" className={isActive("/contact") ? "active" : ""}>Contact</Link>
-        <Link to="/contact" className="btn btn-primary mt-6" style={{ width: "fit-content" }}>Let's talk</Link>
+        <Link to="/" className={isActive("/") ? "active" : ""}>
+          Home
+        </Link>
+        <Link to="/about" className={isActive("/about") ? "active" : ""}>
+          About
+        </Link>
+        <Link to="/work" className={isActive("/work") ? "active" : ""}>
+          Work
+        </Link>
+        <Link to="/blog" className={isActive("/blog") ? "active" : ""}>
+          Blog
+        </Link>
+        <Link to="/contact" className={isActive("/contact") ? "active" : ""}>
+          Contact
+        </Link>
+        <Link
+          to="/contact"
+          className="btn btn-primary mt-6 text-white px-4 py-2"
+          style={{ width: "fit-content" }}
+        >
+          Let's talk
+        </Link>
       </div>
     </>
   );

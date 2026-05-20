@@ -7,89 +7,84 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-// import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 export default function Blog() {
   const { id } = useParams();
-  const blog = blogDetailsData.find((blog) => blog.id.toString() === id);
-  console.log(blog);
+  const blog = blogDetailsData.find((item) => item.id.toString() === id);
+
   if (!blog) {
-    return <p className="text-white">Blog not found</p>;
-  }
-  return (
-    <div className="blog-details-sec">
-      <Navbar />
-      <div className="blog-section">
-        <div className="container p-4 blog-details">
-          <h1 className="mb-4 text-dark blog-heading">{blog.title}</h1>
-          <p className="mb-4 text-dark blog-summary">{blog.summary}</p>
-          {blog.content.map((section, index) => {
-            if (section.type === "question") {
-              return (
-                <>
-                  <Accordion className="blog-accordion">
-                    <AccordionSummary
-                      expandIcon={<ArrowDownwardIcon />}
-                      aria-controls="panel1-content"
-                      id="panel1-header"
-                      className="blog-question"
-                    >
-                      <Typography component="span">
-                        <p key={index} className="mb-3 text-dark ">
-                          {section.question}
-                        </p>
-                      </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails className="blog-content">
-                      <Typography>
-                        <p className="text-dark ">{section.content}</p>
-                      </Typography>
-                    </AccordionDetails>
-                  </Accordion>
-                </>
-              );
-            }
-            if (section.type === "list") {
-              return (
-                <>
-                  <Accordion className="blog-accordion">
-                    <AccordionSummary
-                      expandIcon={<ArrowDownwardIcon />}
-                      aria-controls="panel1-content"
-                      id="panel1-header"
-                      className="blog-question"
-                    >
-                      <Typography component="span">
-                        <p key={index} className="mb-3 text-dark ">
-                          {section.question}
-                        </p>
-                      </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails className="blog-content">
-                      <Typography>
-                        <ul
-                          style={{
-                            listStyleType: "circle",
-                            paddingLeft: "20px",
-                          }}
-                        >
-                          {section.items.map((item, index) => (
-                            <li key={index}>{item}</li>
-                          ))}
-                        </ul>
-                      </Typography>
-                    </AccordionDetails>
-                  </Accordion>
-                </>
-              );
-            }
-          })}
+    return (
+      <div className="blog-details-page">
+        <Navbar />
+        <div className="container section">
+          <p className="text-center text-white">Blog not found.</p>
         </div>
       </div>
+    );
+  }
+
+  return (
+    <main className="blog-details-page">
+      <Navbar />
+
+      <div className="container">
+        <article className="blog-article">
+          <header className="blog-article-header">
+            <p className="blog-article-meta">
+              {blog.author} · {blog.date}
+            </p>
+            <h1 className="blog-article-title">{blog.title}</h1>
+            <p className="blog-article-summary">{blog.summary}</p>
+          </header>
+
+          <div className="blog-article-content">
+            {blog.content.map((section, index) => (
+              <Accordion
+                key={index}
+                className="blog-accordion"
+                TransitionProps={{ unmountOnExit: true }}
+              >
+                <AccordionSummary
+                  expandIcon={<ArrowDownwardIcon />}
+                  aria-controls={`panel-${index}-content`}
+                  id={`panel-${index}-header`}
+                  className="blog-question px-2 rounded-5xl"
+                >
+                  <Typography component="span">
+                    <span className="blog-question-text">
+                      {section.question}
+                    </span>
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails className="blog-content">
+                  <Typography>
+                    {section.type === "question" ? (
+                      <p>{section.content}</p>
+                    ) : (
+                      <ul className="blog-list">
+                        {section.items.map((item, itemIndex) => (
+                          <li key={itemIndex}>{item}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+            ))}
+          </div>
+
+          <div className="blog-back-row">
+            <button
+              className="backbutton-blog"
+              onClick={() => window.history.back()}
+            >
+              Back to blog
+            </button>
+          </div>
+        </article>
+      </div>
+
       <Footer />
-      <button className="backbutton-blog" onClick={() => window.history.back()}>
-        Back
-      </button>
-    </div>
+    </main>
   );
 }

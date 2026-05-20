@@ -14,7 +14,7 @@ export default function About() {
       <ScrollToTop />
       <Navbar />
 
-      <div style={{ paddingTop: "64px" }}>
+      <div style={{ paddingTop: "4px" }}>
         {/* Page header */}
         <div className="page-header">
           <div className="container">

@@ -2,33 +2,39 @@
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import blogData from "../js/blogs-data";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const BlogPage = () => {
-  const navigate = useNavigate();
   return (
-    <>
+    <div className="page-shell">
       <Navbar />
-      <div className="container p-4 d-flex justify-content-between gap-4 blogs-details">
-        {blogData.map((blog) => (
-          <div
-            key={blog.id}
-            className="blog-post w-100 "
-            onClick={() => navigate(`/blogdetails/${blog.id}`)}
-          >
-            <img src={blog.imageUrl} alt={blog.title} className=" w-100 h-50" />
-            <h1 className="fw-normal fs-4 text-white bg-danger">
-              {blog.title}
-            </h1>
-            <p className="text-white  bg-info">
-              By {blog.author} on {blog.date}
-            </p>
-            <p className="text-white">{blog.summary}</p>
+      <main className="blog-page section">
+        <div className="container">
+          <div className="blog-grid">
+            {blogData.map((blog) => (
+              <Link
+                key={blog.id}
+                to={`/blogdetails/${blog.id}`}
+                className="blog-card p-2"
+              >
+                <div className="blog-card-image">
+                  <img src={blog.imageUrl} alt={blog.title} />
+                </div>
+                <div className="blog-card-body">
+                  <p className="blog-card-meta">
+                    {blog.author} · {blog.date}
+                  </p>
+                  <h2 className="blog-card-title">{blog.title}</h2>
+                  <p className="blog-card-summary">{blog.summary}</p>
+                  <span className="blog-card-cta">Read article</span>
+                </div>
+              </Link>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

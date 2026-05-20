@@ -10,7 +10,7 @@ export default function Work() {
       <ScrollToTop />
       <Navbar />
 
-      <div style={{ paddingTop: "64px" }}>
+      <div style={{ paddingTop: "4px" }}>
         <div className="page-header">
           <div className="container">
             <p className="text-label mb-4">Portfolio</p>
