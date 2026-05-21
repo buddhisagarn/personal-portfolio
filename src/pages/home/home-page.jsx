@@ -79,7 +79,7 @@ export default function HomePage() {
               <h1 className="display-xl hero-title">
                 Buddhi Sagar
                 <br />
-                <em>Nyaupane.</em>
+                <p>Nyaupane.</p>
               </h1>
 
               <p className="hero-desc">

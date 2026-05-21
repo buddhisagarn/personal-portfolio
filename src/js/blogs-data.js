@@ -3,7 +3,7 @@ const blogData = [
     // Blog 1 Details
     id: 1,
     slug: "The-lessons-from-Gita", // Use a URL-friendly unique identifier
-    title: "Bhagavad Gita ",
+    title: "Lessons From the Bhagavad Gita",
     author: "Vedavyasa",
     date: "500 BCE – 200 CE",
     summary: "This blog covers the lessons from the Bhagavad gita.",
@@ -13,8 +13,8 @@ const blogData = [
     // Blog 2 Details
     id: 2,
     slug: "medical-myth-and-the-actual-facts",
-    title: "Medical Myths",
-    author: "Buddhi Sagar Neupane",
+    title: "Top 5 Medical Myths",
+    author: "Buddhi Sagar Nyaupane",
     date: "2024-01-15",
     summary: "The myths about medical field that you think as a fact.",
     imageUrl: "/medical-myth.webp",
@@ -23,12 +23,35 @@ const blogData = [
     // Blog 3 Details
     id: 3,
     slug: "deploying-react-on-netlify",
-    title: "Netlify",
-    author: "Buddhi Sagar Neupane",
+    title: "Deploy React project on Netlify.",
+    author: "Buddhi Sagar Nyaupane",
     date: "2025-11-01",
     summary: "A step-by-step guide to deploying a React application for free.",
 
     imageUrl: "/netlify.jpeg",
+  },
+  {
+    // Blog 2 Details
+    id: 4,
+    slug: "Modern-portfolio-with-react",
+    title: "Building a Modern Portfolio with React",
+    author: "Buddhi Sagar Nyaupane",
+    date: "2024-01-15",
+    summary:
+      "The key steps for designing a fast, responsive portfolio with React, clean layout, and deploy-ready structure.",
+    imageUrl: "/assets/images/react-logo.avif",
+  },
+  {
+    // Blog 3 Details
+    id: 5,
+    slug: "animate-website-with-aos",
+    title: "Using AOS to Animate Your Website ",
+    author: "Buddhi Sagar Nyaupane",
+    date: "2025-11-01",
+    summary:
+      "A guide to using the Animate On Scroll library to bring smooth motion to your portfolio pages.",
+
+    imageUrl: "/assets/images/IOS-animation.png",
   },
 ];
 
@@ -128,7 +151,7 @@ export const blogDetailsData = [
   {
     id: 2,
     title: "Top 5 Medical Myths You Probably Believe (And Why They’re Wrong)",
-    author: "Buddhi Sagar Neupane",
+    author: "Buddhi Sagar Nyaupane",
     date: "2024-01-15",
     summary: "The myths about medical field that you think as a fact.",
     content: [
@@ -182,7 +205,7 @@ export const blogDetailsData = [
   {
     id: 3,
     title: "Deploy React project on Netlify.",
-    author: "Buddhi Sagar Neupane",
+    author: "Buddhi Sagar Nyaupane",
     date: "2025-11-01",
     summary: "A step-by-step guide to deploying a React application for free.",
     content: [
@@ -242,7 +265,7 @@ export const blogDetailsData = [
   {
     id: 4,
     title: "Building a Modern Portfolio with React",
-    author: "Buddhi Sagar Neupane",
+    author: "Buddhi Sagar Nyaupane",
     date: "2026-03-12",
     summary:
       "The key steps for designing a fast, responsive portfolio with React, clean layout, and deploy-ready structure.",
@@ -279,7 +302,7 @@ export const blogDetailsData = [
   {
     id: 5,
     title: "Using AOS to Animate Your Website",
-    author: "Buddhi Sagar Neupane",
+    author: "Buddhi Sagar Nyaupane",
     date: "2026-04-08",
     summary:
       "A guide to using the Animate On Scroll library to bring smooth motion to your portfolio pages.",

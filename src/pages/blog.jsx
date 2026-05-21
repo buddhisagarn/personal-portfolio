@@ -21,7 +21,7 @@ const BlogPage = () => {
                   <img src={blog.imageUrl} alt={blog.title} />
                 </div>
                 <div className="blog-card-body">
-                  <p className="blog-card-meta">
+                  <p className="blog-card-meta pt-2 ">
                     {blog.author} · {blog.date}
                   </p>
                   <h2 className="blog-card-title">{blog.title}</h2>
